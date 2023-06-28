@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+"""A multi-line comment to describe the script,
+made with triple quotes"""
+4
+def main () : # all code should appear within a function
+"W"all functions have multiline comments to describe them"'"
+6
+1 7
+my string = "your code would go here" # vars use
+# vars use _ not camelCase
+print (my string)
+# print to standard-out
+110
+: 11
+:12
+13
+# calling main () using this technique allows others to import your code
+if name
+== 11
+main
+main ()
