@@ -1,20 +1,22 @@
-# create wordbank list
-wordbank= ["indentation", "spaces"]
-
-# create student list
-tlgstudents= ['Albert', 'Anthony', 'Brenden', 'Craig', 'Deja', 'Elihu', 'Eric', 'Giovanni', 'James', 'Joshua', 'Maria', 'Mohamed', 'PJ', 'Philip', 'Sagan', 'Suchit', 'Meka', 'Trey', 'Winton', 'Xiuxiang', 'Yaping']
-
-
-# add integer 4 to the wordbank
-wordbank.append(4)
-
-# prompt user for number 0-20 be sure convert to int
-num = int(input=("Pick a number"))
-
-# Use number from user to slice list
-choice= int(input("Pick a student number!"))
-student_name= tlgstudents[choice]
-
-
-# print output
-print(f{'student_name} always uses, {wordbank[1]} {wordbank[2]}, to indent.')
+  1marvelchars= {
+  2 "Starlord":
+  3   {"real name": "peter quill",
+  4   "powers": "dance moves",
+  5   "archenemy": "Thanos"},
+  6 
+  7 "Mystique":
+  8   {"real name": "raven darkholme",
+  9   "powers": "shape shifter",
+ 10   "archenemy": "Professor X"},
+ 11 
+ 12 "Hulk":
+ 13   {"real name": "bruce banner",
+ 14   "powers": "super strength",
+ 15   "archenemy":"adrenaline"}}
+ 16 
+ 17 char_name = input("What character do you want to know about? Starlord, Mystique,Hu    lk ")
+ 18 
+ 19 char_stat = input("What statistic do you want to know about? real name, powers, ar    chenemy ")
+ 20 
+ 21 result = marvelchars.get(char_name).get(char_stat)
+ 22 print(f"{char_name} 's {char_stat} is: {result}")
