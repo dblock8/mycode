@@ -1,10 +1,9 @@
 import requests
 
-import pip
-
 def get_space_stations(state):
-    url = f"https://data.nasa.gov/resource/gvk9-iz74.json?"
+    url = f"https://data.nasa.gov/resource/gvk9-iz74.json?state={state}"
     response = requests.get(url)
+    
     if response.status_code == 200:
         return response.json()
     else:
@@ -28,3 +27,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+    
