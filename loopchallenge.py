@@ -13,5 +13,4 @@ for farms in farms:
 
 for farms in farms:
     if farms["name"].lower() == choice.lower():
-        print("[name]['agriculture']")
-                                                                                     
+        print(['agriculture'])
