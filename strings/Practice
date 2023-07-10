@@ -1,17 +1,12 @@
 #!/usr/bin/env python3
 
-    
-farms = [{"name": "NE Farm", "agriculture": ["sheep", "cows", "pigs", "chickens    ", "llamas", "cats"]},
-         {"name": "W Farm", "agriculture": ["pigs", "chickens", "llamas"]},
-         {"name": "SE Farm", "agriculture": ["chickens", "carrots", "celery"]}]
+with open("dracula.txt","r") as book:
+    print(book)
 
-NE_animals= farms[0]["agriculture"]
-
-for farms in farms:
-    print("_", farms["name"])
-    choice = input("Chose a farm!\n")
-
-for farms in farms:
-    if farms["name"].lower() == choice.lower():
-        print("[name]['agriculture']")
-                                                                                     
+count = 0
+for line in book:
+if "vampire" in line.lower():
+    print(line)
+        count += 1
+print(count)
+~                      
