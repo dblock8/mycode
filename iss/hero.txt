@@ -1,1 +1,10 @@
-[captainAmerica, ironMan, thor, hulk, drStange, blackPanther, blackWidow, vision, scarletWitch, spiderman, wong, falcon, warMachine, rocket, groot, drax, nebula, gamora, loki, heimdallii]
+[Captain America: 4,
+Iron Man:4, Thor:5,
+Hulk:5, 
+DrStange:3, 
+BlackPanther:3,  
+Vision:4, 
+ScarletWitch:4, 
+Spiderman:3]
+                                                                                  
+
