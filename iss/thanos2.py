@@ -3,18 +3,18 @@ import random
 def pause():
     input("Press Enter to continue...")
 
-def infinity(world_choice, character_power):
-    stones = ["Soul", "Reality", "Mind", "Power", "Space", "Time"]
-    random.shuffle(stones)
+def infinity(world_choice, character_power): #random shuffle thanos on worlds (random.shuffle worlds() ?
+    stones = ["Soul"]
+    
 
     if world_choice in ["AsgardianShip", "Knowhere", "Vormir", "Wakanda", "Titan", "Xandar"]:
         for stone in stones:
             print("You found", stone, "stone on", world_choice)
 
-            # Check if Thanos is present
+            
             thanos_present = random.choice([True, False])
 
-            if thanos_present:
+            if thanos_present:# is this correct using character powers to determine result
                 print("Thanos is here on", world_choice + "!")
                 fight_result = fight(character_power)
                 if fight_result:
@@ -24,9 +24,9 @@ def infinity(world_choice, character_power):
                 break
 
     else:
-        print("He beat you to it!")
+        print("He beat you to the" stone + "!")
 
-def character_select():
+def character_select():#works
     avengers = {
         "hulk": 95,
         "thor": 90,
@@ -50,7 +50,7 @@ def character_select():
 
     return character_power
 
-def fight(character_power):
+def fight(character_power): # need to add charater poweres for avengers
     character_health = 150
     thanos_health = 150
 
@@ -62,7 +62,7 @@ def fight(character_power):
 
     return character_health > 0
 
-def world():
+def world(): #works!
     b = input("Find the soul stone on one of these worlds: \nAsgardianShip, Knowhere, Vormir, Wakanda, Titan, Xandar ")
     print("Entering warp seed to", b)
     pause()
@@ -80,7 +80,5 @@ def main():
     world()
     infinity()
     fight()
-    # Continue with the rest of your code...
 
-# Call the main function
 main()
