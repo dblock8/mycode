@@ -39,7 +39,7 @@ def character_select():#works, may need to remove keys and recreate as charater 
         if a in avengers:
             character_power = avengers[a]
             print("You have chosen well, my friend. Power level:", character_power)
-            break
+            pause()
         else:
             c = input("Do you need help choosing? Yes or No? ")
             if c.lower() == "no":
