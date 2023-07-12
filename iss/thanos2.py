@@ -26,7 +26,7 @@ def infinity(world_choice, character_power): #random shuffle thanos on worlds (r
     else:
         print("He beat you to the" stone + "!")
 
-def character_select():#works
+def character_select():#works, may need to remove keys and recreate as charater power level i.e fight function
     avengers = {
         "hulk": 95,
         "thor": 90,
