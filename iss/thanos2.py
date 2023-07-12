@@ -22,7 +22,7 @@ def infinity(world_choice, character_power): #random shuffle thanos on worlds (r
                 else:
                     print("You failed, Snap destroyed half the universe.")
                 break
-
+        world_choice = Thanos
     else:
         print("He beat you to the" stone + "!")
 
