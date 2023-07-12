@@ -5,7 +5,7 @@ def pause():
 
 def infinity(world_choice, character_power): #random shuffle thanos on worlds (random.shuffle worlds() ?
     stones = ["Soul"]
-    
+    world_list = ["AsgardianShip", "Knowhere", "Vormir", "Wakanda", "Titan", "Xandar"]:
 
     if world_choice in ["AsgardianShip", "Knowhere", "Vormir", "Wakanda", "Titan", "Xandar"]:
         for stone in stones:
@@ -22,7 +22,7 @@ def infinity(world_choice, character_power): #random shuffle thanos on worlds (r
                 else:
                     print("You failed, Snap destroyed half the universe.")
                 break
-        world_choice = Thanos
+        
     else:
         print("He beat you to the" stone + "!")
 
@@ -40,6 +40,7 @@ def character_select():#works, may need to remove keys and recreate as charater 
             character_power = avengers[a]
             print("You have chosen well, my friend. Power level:", character_power)
             pause()
+            break
         else:
             c = input("Do you need help choosing? Yes or No? ")
             if c.lower() == "no":
@@ -64,21 +65,19 @@ def fight(character_power): # need to add charater poweres for avengers
 
 def world(): #works!
     b = input("Find the soul stone on one of these worlds: \nAsgardianShip, Knowhere, Vormir, Wakanda, Titan, Xandar ")
-    print("Entering warp seed to", b)
+    print("Entering warp speed to", b)
     pause()
 
     for num in range(5, 0, -1):
         print(num)
 
     print("You have arrived at", b)
-
-    character_power = character_select()
-    infinity(b, character_power)
-
+    return b
+    
 def main():
     character_power = character_select()
-    world()
-    infinity()
+    b = world()
+    infinity(b, character_power, world_choice)
     fight()
 
 main()
