@@ -7,6 +7,7 @@ def infinity(world_choice, character_power): #random shuffle thanos on worlds (r
     stones = ["Soul"]
     world_list = ["AsgardianShip", "Knowhere", "Vormir", "Wakanda", "Titan", "Xandar"]:
 
+    random.select(world_list) #make sure correct
     if world_choice in ["AsgardianShip", "Knowhere", "Vormir", "Wakanda", "Titan", "Xandar"]:
         for stone in stones:
             print("You found", stone, "stone on", world_choice)
@@ -51,7 +52,7 @@ def character_select():#works, may need to remove keys and recreate as charater 
 
     return character_power
 
-def fight(character_power): # need to add charater poweres for avengers
+def fight(character_power): # need to add charater poweres for avengers, does not work
     character_health = 150
     thanos_health = 150
 
