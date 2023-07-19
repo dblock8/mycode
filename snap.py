@@ -6,12 +6,6 @@ def color():
     BLUE = "\033[94m"
     RED = "\033[91m"
     END_COLOR = "\033[0m"
-    Green = "\033[32m"
-    Yellow = "\033[33m"
-    Blue = "\033[34m"
-    Magent = "\033[35m"
-    Cyan = "\033[36m"
-    White = "\033[37m"
 
     print(f"{BLUE} \nYou are an Avenger seeking the Infinty stones on worlds within the Marvel Universe.\nChoose your hero and travel but be warned, Thanos too searches for the stones to recreate the universe by erasing half of it. Defeat him if you cross paths and save the citizens of the Universe\n {END_COLOR}")
 
